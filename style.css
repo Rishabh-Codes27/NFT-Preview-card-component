@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,100;1,300;1,400&family=Mochiy+Pop+One&family=Outfit:wght@300;400;600&family=Waterfall&display=swap");
+
+:root{
+    --Softblue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --mainBG: hsl(217, 54%, 11%);
+    --cardBG: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    --Font-size-paragraph: 18px;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  display: grid;
+  background-color: var(--mainBG);
+  place-items: center;
+  min-height: 100vh;
+  font-family: "Outfit", sans-serif;
+}
+
+.card{
+    position: relative;
+    color: var(--White);
+    background-color: var(--cardBG);
+    padding: 16px 0;
+    border-radius: 16px;
+    max-width: 380px;
+    box-shadow: 0 0 10px 15px rgb(0, 0, 0, 0.3);
+}
+
+.pic{
+    position: relative;
+  display: grid;
+  place-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.pic .main{
+    width: 90%;
+    display: grid;
+    border-radius: 10.4px;
+}
+
+.overlay {
+    position: absolute;
+    width: 90%;
+    height:56%;
+    border-radius:10.4px;
+    opacity: 0;
+    background: hsla(178, 100%, 50%, 0.3);
+    transition: all 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 15px;
+    left: 20px;
+  }
+  .overlay:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+.text{
+    padding: 0 1.5rem 1rem;
+}
+
+.text p {
+    color: var(--Softblue);
+    font-size: var(--font-size-paragrapgh);
+    padding-bottom: 2rem;
+    padding-top: 16px;
+    font-weight: 600;
+    
+}
+
+.text h2:hover{
+    color: var(--Cyan);
+}
+
+.details{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    
+}
+
+.price{
+    color: var(--Cyan);
+}
+
+.price img {
+    position: relative;
+    right: 3%;
+    top: 15%;
+}
+
+.timer{
+    color: var(--Softblue);
+}
+
+.timer img{
+    position: relative;
+    right: 3%;
+    top: 15%;
+}
+
+.avatar{
+    position: relative;
+    display: flex;
+    color: var(--Softblue);
+    padding-top: 32px;
+    padding-left: 24px;
+    align-items: center;
+}
+
+.avatar span{
+    color: var(--White);
+    cursor: pointer;
+}
+
+.avatar span:hover{
+    color: var(--Cyan);
+}
+
+.avatar img{
+    width: 10%;
+    border: solid 1px var(--White);
+    border-radius: 50%;
+}
+
+.avatar p{
+    padding-left: 16px;
+    display: inline;
+    position: relative;
+    word-spacing: 1em;
+}
+
+.attribution {
+    font-size: 15px;
+    color: var(--White);
+  }
